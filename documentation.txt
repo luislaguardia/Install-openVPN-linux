@@ -1,0 +1,14 @@
+INSTALLING VPN
+
+luislaguardia@AWIT:~$ sudo apt install openvpn -y
+      
+
+The file located in   /etc/openvpn/server.conf can be edited to alter OpenVPN's settings. The OpenVPN server's settings are contained in this file. To configure features like encryption, tunneling, traffic shaping, etc., we can adjust the parameters.
+
+We may utilize the.ovpn file we downloaded from the server and store it on our computer to establish a connection to an OpenVPN server. The following command on the command line can be used to accomplish this:
+
+CONNECT TO VPN
+
+    luislaguardia@AWIT:~$ sudo openvpn --config internl.ovpn
+
+After the connection is established, we can communicate with the internal hosts on the internal network.
